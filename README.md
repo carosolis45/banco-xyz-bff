@@ -12,6 +12,7 @@ Sistema Backend for Frontend (BFF) para el Banco XYZ, diseñado para optimizar l
 - Centralizar la lógica de negocio en un solo lugar
 
 ## Estructura del Proyecto
+```text
 banco-xyz-bff/
 ├── src/
 │ └── main/
@@ -50,7 +51,7 @@ banco-xyz-bff/
 ├── README.md
 └── pom.xml
 
-text
+```
 
 ## Tecnologías Utilizadas
 
@@ -93,11 +94,12 @@ text
 Actualmente todos los endpoints están públicos para facilitar el desarrollo.
 
 ### Credenciales H2 Console
+```text
 JDBC URL: jdbc:h2:mem:banco_xyz_bff
 Usuario: sa
 Contraseña: (vacío)
 
-text
+```
 
 ## Base de Datos
 
@@ -110,6 +112,8 @@ SELECT * FROM cuentas;
 
 -- Ver transacciones de una cuenta
 SELECT * FROM transacciones WHERE cuenta_id = '101';
+
+```
 
 Instalación y Ejecución
 Requisitos previos
@@ -131,7 +135,7 @@ H2 Console: http://localhost:8080/h2-console/
 
 Ejemplos de Respuestas
 GET /api/web/
-json
+```json
 {
   "nombre": "Banco XYZ BFF",
   "version": "1.0.0",
@@ -144,7 +148,7 @@ json
   ]
 }
 GET /api/web/cuentas
-json
+```json
 [
   {
     "id": 1,
